@@ -1,0 +1,2 @@
+ErrorDocument 403 /home/44318/domains/enkera.com/html/404.html
+ErrorDocument 404 /home/44318/domains/enkera.com/html/404.html

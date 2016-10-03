@@ -1,0 +1,364 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>StatWing - Online Data Analysis</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
+	
+	<style>
+	@font-face {
+	    font-family: 'Avenir';
+	    src: url('AvenirNext-UltraLight.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Avenir';
+	    src: url('AvenirNext-Bold.ttf') format('truetype');
+	    font-weight: bold;
+	    font-style: normal;
+	}
+	
+	body {
+		font-family: "Avenir", Helvetica, Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		color: #474d51;
+		background: #efece5; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #efece5 30%, #cbc9c3 99%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,#efece5), color-stop(99%,#cbc9c3)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #efece5 30%,#cbc9c3 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #efece5 30%,#cbc9c3 99%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #efece5 30%,#cbc9c3 99%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #efece5 30%,#cbc9c3 99%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efece5', endColorstr='#cbc9c3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	
+	a {
+		color: #2a9ab6;
+		text-decoration: none;
+	}
+	
+	.wrapper {
+		width: 960px;
+		margin: 30px auto;
+	}
+	
+	.paper {
+		box-shadow: 0px 10px 30px #d0cdc7;
+		background-image: url(papertorn.png), url(bg.jpg);
+		background-position: 0px 50px, left;
+		background-repeat: no-repeat, repeat;
+		border-radius: 5px;
+		position: relative;
+		border-radius: 20px 20px 0 0;
+		margin-bottom: 40px;
+	}
+	
+	.paperbottom {
+	background-image: url(paperbottom.png);
+	width: 1000px;
+	height: 250px;
+	margin: -130px 0 -55px -53px;
+	background-repeat: no-repeat;
+	}
+	
+	.content {
+		padding: 30px;
+	}
+	
+	.menu {
+		height: 30px;
+		background-image: url(bg-right.png),  url(bg-left.png),  url(bg-menu.png);
+		background-position: right, left, center;
+		background-repeat: no-repeat, no-repeat, repeat;
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-topright: 5px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 10px;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+	.center {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.button-green {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #aac939), color-stop(1, #559119) );
+		background:-moz-linear-gradient( center top, #aac939 5%, #559119 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#aac939', endColorstr='#559119');
+		background-color:#aac939;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		-moz-box-shadow:    inset 0px 2px 0px #bfff74;
+		-webkit-box-shadow: inset 0px 2px 0px #bfff74;
+		box-shadow:         inset 0px 2px 0px #bfff74;
+		border:1px solid #62981e;
+		display:inline-block;
+		color:#f6f1e5;
+		font-size:14px;
+		font-weight:bold;
+		padding:5px 12px 4px;
+		text-decoration:none;
+		text-shadow: 0px -1px 0px #6d8824;
+		text-transform: uppercase;
+		box-shadow: 0px 1px 0px #d0e5ec;
+	}
+	
+	.button-green:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #559119), color-stop(1, #aac939) );
+		background:-moz-linear-gradient( center top, #559119 5%, #aac939 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#559119', endColorstr='#aac939');
+		background-color:#559119;
+		cursor: pointer;
+	}
+	
+	.button-green:active {
+		position:relative;
+		top:1px;
+	}
+	
+	.button-sunk {
+		background: -moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.45)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		display:inline-block;
+		color:#f6f1e5;
+		font-size:14px;
+		font-weight:bold;
+		padding:6px 13px 5px;
+		text-decoration:none;
+		text-shadow: 0px 1px 1px #000;
+		text-transform: uppercase;
+		box-shadow: 0px 1px 0px #cbc9c3;
+	}
+	
+	.button-sunk:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #559119), color-stop(1, #aac939) );
+		background:-moz-linear-gradient( center top, #559119 5%, #aac939 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#559119', endColorstr='#aac939');
+		background-color:#559119;
+		cursor: pointer;
+	}
+	
+	.button-sunk:active {
+		position:relative;
+		top:1px;
+	}
+	
+	.big {
+		font-size: 22px;
+		padding:5px 22px 4px;
+	}
+	
+	.intro {
+		font-size: 24px;
+		line-height: 40px;
+		text-align: center;
+	}
+	
+	.line {
+		background-color: #b2b2ac;
+		height: 1px;
+		width: 410px;
+		box-shadow: 0px 1px 0px #fff;
+	}
+	
+	.footer {
+		margin: 30px auto;
+		clear: both;
+		float: left;
+		text-align: center;
+		width: 960px;
+	}
+	.topwrapper {
+		height: 130px;
+		width: 940px;
+	}
+	.logo {
+		float: left;
+		width: 200px;
+		margin-top: 15px;
+	}
+	.welcome {
+		line-height: 40px;
+		font-size: 45px;
+		float: left;
+		margin-top: -10px;
+	}
+	.block {
+		box-shadow: 0px 10px 30px #d0cdc7;
+		background-image: url(papertorn.png), url(bg.jpg);
+		background-position: top, left;
+		background-repeat: no-repeat, repeat;
+		border-radius: 5px;
+		width: 260px;
+		padding: 5px 20px 20px 20px;
+		float: left;
+		margin: 20px 20px 0 0;
+	}
+	
+	.howitworks {
+		width: 100%;
+		height: 230px;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.ruler {
+		height: 180px;
+		background-color: #b2b2ac;
+		width: 1px;
+		float: left;
+		background-color: #b2b1ab;
+		box-shadow: 1px 0px 0px #fff;
+	}
+	
+	.section {
+		height: 50px;
+		width: 299px;
+		float: left;
+		position: relative;
+		text-align: center;
+	}
+	
+	.howitworkspadding {
+		padding-top: 100px;
+	}
+	
+	#slideshow {
+		position: absolute;
+		left: 410px;
+		top: 220px;
+	}
+	
+	h4 {
+		margin-bottom: -20px;
+	}
+	
+	#slideshow img { display: none }
+	
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('#slideshow img:first').fadeIn(1000, function() {
+	        $('#slideshow').cycle();
+	    });
+	});
+	
+	</script>
+	
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	
+	<div class="wrapper">
+		<div class="paper">
+		<div class="menu">
+			<div class="button-green right">Sign Up</div>
+		<div class="button-sunk right"  style="margin-right: 10px;">login</div>
+		</div>
+		<div class="content">
+			<div class="topwrapper">
+			<div class="logo"><img src="logo.png"/></div>
+			
+			<div class="welcome">
+			<span style="font-size: 12px; font-weight: bold;">ONLINE DATA ANALYSIS</span><br>
+			Turn data into insight. In seconds.</div>
+			</div>
+			
+			
+			<div class="howitworks">
+			
+			<div class="section"><img src="howitworks1.png" /><h4>1. Upload your data</h4><br>
+			(Excel, .csv, SPSS, SurveyMonkey)</div>
+			<div class="ruler"></div>
+			<div class="section howitworkspadding"><h4>2. Instantly see your results</h4><br>
+			Manipulate chart style, color, layout</div>
+			<div id="slideshow">
+				<img src="howitworks2a.png">
+				<img src="howitworks2b.png">
+				<img src="howitworks2c.png">
+			</div>
+			<div class="ruler"></div>
+			<div class="section"><img src="howitworks3.png" /><h4>3. Share your results to anyone</h4><br>
+			share results, download as Powerpoint</div>
+			
+			</div>
+			
+			
+			
+			<div class="line" style="float: left;"></div><img src="tinylogo.png" style="width: 24px;height: 20px; margin: -16px 0 0 25px;" /><div class="line" style="float: right;"></div>
+			<br><br>
+			
+			<div class="intro">Exploring your data shouldn’t require statistical jargon.<br>
+			Data analysis should produce insight, not pivot tables.<br>
+			Statwing makes working with data intuitive and beautiful. <br>
+			<br>
+			
+			<div class="button-green big">Try the demo</div>
+			</div>
+		<div class="paperbottom"></div>
+		</div></div>
+		<div class="block">
+		<h3>Political Survey Results</h3>
+		Downloaded from SurveyMonkey<br><br>
+		
+		Likely voters were surveyed about their 
+		personality traits. Which candidate's 
+		supporters are more agreeable?<br><br>
+		<div class="button-green center"  style="margin-left: 40px;text-transform: none;">Analyze survey results</div>
+		</div>
+		<div class="block">
+		<h3>Quantified Self Records</h3>
+		Pasted from Excel<br><br>
+		
+		Investigate one man’s sleep, exercise, 
+		and mood data. Does more exercise 
+		make him happier?<br><br>
+		<div class="button-green center"  style="margin-left: 10px;text-transform: none;">Analyze quantified self records</div>
+		</div>
+		<div class="block">
+		<h3>Congressional Data</h3>
+		Pulled from ProPublica and Wikipedia<br><br>
+		
+		Analyze SOPA/PIPA Congressional 
+		lobbying and voting. What mattered 
+		most to how Congress voted: party, 
+		age, or lobbying dollars?<br><br>
+		<div class="button-green center"  style="margin-left: 17px;text-transform: none;">Analyze SOPA/PIPA lobbying</div>
+		</div>
+		<div class="footer">© 2012 Statwing. All Rights Reserved. • Desiged in Amsterdam by <a href="http://www.enkera.com/">Enkera</a> via <a href="http://www.scoutzie.com/">Scoutzie</a> • <a href="/legal">Legal</a> <a href="https://mixpanel.com/f/partner">
+		<img alt="Real Time Web Analytics" src="https://mixpanel.com/site_media/images/partner/badge_light.png">
+		</a></div>
+	</div>
+</body>
+</html>

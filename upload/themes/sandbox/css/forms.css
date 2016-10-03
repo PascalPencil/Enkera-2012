@@ -1,0 +1,57 @@
+/**
+ * Forms CSS
+ * 
+ * Copyright (c) 2010 Mark Osborne
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @author Mark Osborne
+ * @version 1.0
+ */
+
+form, fieldset {
+    margin: 0;
+    padding: 0;
+}
+fieldset.buttons {
+    float: right;
+}
+.input_textbox, .file_input_textbox, .input_textarea {
+	font-size: 12px;
+	text-decoration: none;
+	outline: none;
+	color: #333333;
+	float: right;
+	width: 356px;
+	padding: 9px 10px 8px 10px;
+	position:relative;
+	margin: 0 0 12px 0;
+}
+#fileName {
+    display: none;
+}
+.file_input_textbox {
+
+}
+.input_textarea {
+    height: 120px;
+    width: 360px;
+}
+.file_input_div {
+
+}
+.file_input_hidden {
+
+}
+.file_input_button {
+    display: none;
+}
+#upload_button {
+
+}

@@ -1,0 +1,25 @@
+.info
+{
+	visibility:hidden;
+}
+
+.left ul li span
+{
+	color: #FFF !important;
+	text-shadow: 0px 0px 3px #FFF, 0px 0px 7px #FFF, 0px 0px 9px #2ea6cb;
+}
+.left ul li a
+{
+	color: #2e9fc2 !important;
+	text-shadow: 0px 0px 3px #FFF, 0px 0px 5px #FFF;	
+}
+
+.left ul li a:hover
+{
+	color:#FFF !important;
+}
+
+.middle span
+{
+	text-shadow: 0px 0px 3px #FFF, 0px 0px 5px #FFF;
+}

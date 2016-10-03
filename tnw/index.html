@@ -1,0 +1,151 @@
+<html>
+<head>
+<script type="text/javascript" src="//use.typekit.net/uyr8rdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+<script>
+  $(function () {
+    $(".rslides").responsiveSlides({
+	    timeout: 5000,
+    });
+  });
+</script>
+<style>
+body {
+	font-family: "proxima-nova",sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+h1 {
+  font-family: "proxima-nova-condensed",sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#box {
+	width: 300px;
+	background: rgba(255,255,255,0.9);
+	border-radius:5px;
+	padding:50px;
+	text-align: center;
+	margin: 20% 32%;
+	z-index: 20;
+	position: absolute;
+}
+.rslides {
+  position: absolute;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.6;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  filter: blur(3px); transition: filter 1s; 
+  -webkit-filter: blur(3px);-webkit-transition: -webkit-filter 1s; 
+  -moz-filter: blur(3px);-moz-transition: -moz-filter 1s; 
+  -o-filter: blur(3px);-o-transition: -o-filter 1s; 
+  -ms-filter: blur(3px);-ms-transition: -ms-filter 1s; 
+  }
+.rslides:hover img {
+  filter: blur(0px); 
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  }
+  .button {
+	text-align: center;
+	color: white;
+	padding: 12px 15px;
+	font-family: "proxima-nova-condensed", sans-serif;
+	border-radius: 5px;
+	border: 1px solid rgba(249,98,16,1);
+	margin: 10px;
+	background: rgb(249,98,16); /* Old browsers */
+}
+.button:hover {
+	text-shadow: 0px 1px 1px rgba(172,31,35,1);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+	border: 1px solid rgba(249,98,16,1);
+	background: -moz-linear-gradient(top,  rgba(250,166,26,1) 0%, rgba(249,98,16,1) 15%, rgba(172,31,35,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,166,26,1)), color-stop(15%,rgba(249,98,16,1)), color-stop(100%,rgba(172,31,35,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(250,166,26,1) 0%,rgba(249,98,16,1) 15%,rgba(172,31,35,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(250,166,26,1) 0%,rgba(249,98,16,1) 15%,rgba(172,31,35,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(250,166,26,1) 0%,rgba(249,98,16,1) 15%,rgba(172,31,35,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(250,166,26,1) 0%,rgba(249,98,16,1) 15%,rgba(172,31,35,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa61a', endColorstr='#ac1f23',GradientType=0 ); /* IE6-9 */
+}
+</style>
+</head>
+<body>
+	<ul class="rslides">
+	  <li><img src="img/1.jpg" alt="" /></li>
+	  <li><img src="img/2.jpg" alt="" /></li>
+	  <li><img src="img/3.jpg" alt="" /></li>
+	  <li><img src="img/4.jpg" alt="" /></li>
+	</ul>
+	<div id="box">
+		<img src="img/logo.svg" />
+		<h1>The Next Web Conference '13</h1>
+		
+<p>
+<h1>Call for Speakers</h1>
+Are you interested in speaking at this amazing conference in Amsterdam?<br>
+<div class="button">Sign up here</div>
+</p>
+<p>
+<h1>Startup Rally</h1>
+Is your startup ready to battle for a global podium?<br>
+<div class="button">Sign up here</div>
+</p>
+<p>
+<h1>Hack Battle</h1>
+Do you want to develop hacks on top of the world's leading API's & SDK's?<br>
+<div class="button">Sign up here</div>
+</p>
+<p>
+<h1>Sponsors</h1>
+Are you interested in sponsoring the leading european technology conference?<br>
+<div class="button">Download the PDF</div>
+</p>
+<p>
+<h1>Tickets</h1>
+Join us now and grab the early bird discount!<br>
+<div class="button">Get Tickets!</div>
+</p>
+<p>
+<h1>CxO Summit</h1>
+Interesting in joining our top-level networking event on Wednesday 24 April?<br>
+<div class="button">Get an invite</div>
+</p>
+</div>
+</body>
+</html>

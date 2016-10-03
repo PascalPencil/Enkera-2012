@@ -1,0 +1,43 @@
+#game_container{
+	top: 20px;
+	position: relative;
+	width: 570px;
+	color: #ffffff;
+    font-size: 12px;
+}
+
+#invaders-canvas, #background-canvas
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-bottom:2px solid #7AA820;
+}
+
+#hud{
+	font-size: 1.6em;
+	width: 570px;
+	height: 350px;
+	color: #7AA820;
+	position: absolute; 
+	top: 6px; 
+	left: 6px;
+	font-family:verdana;
+}
+
+#gameover , #next{
+	display: none;
+	margin-top: 150px;
+	width: 570px;
+	text-align: center;
+	font-size: 2.2em;
+}
+
+.score,.lives{
+	width: 70%;
+	float: right;
+}
+
+.lives{
+	width: 30%;
+}	

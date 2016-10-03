@@ -1,0 +1,310 @@
+<!--
+                             :tGK#######Kf.                                          L#####i        
+                        :fW#####WEGGE#######;                                      ,#######j        
+                    .f######G,         t#####G                                    L########;        
+                 .G######L              ;#####,                                  K##D######.        
+               j######W,                .#####D                                 ###  K####K         
+             G######W.                  ,#####L                               .###.  K####,         
+           G#######,                    ######:                              .###i   ####K          
+         ;#######L                     K#####G                              .###K   :####.          
+        D#######:                    .######D                               ####    W###t           
+       W#######                     E######j                               ####f   j###G            
+      K#######                   iW######K                                E####   ;###E             
+     j#######;               :L########K.                                ;####i  ,###E              
+     #######W          :fDW#########E;                                   #####  ;###D               
+    ;#######j           :tLGDDGfi.                                      f####t f###f                
+    f#######:                                                           ##### K###,      :,.        
+    i#######:                               .fK###L       iD####K      G####E###W   jW#######,      
+     #######f                             L#######L    f#########:    .########f G###########f      
+     ;#######.    :fE#######K,           L########  t###########E     K######Wj####E,j######K       
+      ,#######tG#####Li,f#####t            ######iG###f  j######     ,###########i   ;#####K        
+        j#########i      W####.           E#########;   ;######      #########K.    j#####f         
+         ,#########KDDK#####K            ,########i    :######      t########.    ,#####E           
+        W#####jjLDEKWWWEGj:              #######G     .######.      #######f    i#####G             
+      ,######t                          E######.      ######.      L######;   L####D,               
+     .######G                         f#######       E#####i      L######i   D#####                 
+     W######                        L########       :#####W     i#######D    D#####.                
+    :######K                     ,K#########;       f#####G   f#########     .#####G                
+    ,######W                  ,D###W;;#####G        :##########K,W#####,      f#####.               
+     #######K             ,L#####f   G###f           ,######L:   W###f         E#####               
+     ;#########ELjjjLGK#######f        tK####L                                  E####K              
+      .###################D;        .W#########                                  j#####             
+        .LW#########WDt.           j###W   W###.                                   K####;           
+                   :ijfLft,       j####j   W##W                         :tLEKW##WEL,.E###E          
+              .L#############i    ######  ;###:                     tK###############E jW##         
+            j#####j    E######:   #######E###i                   ;W#####t      :######W             
+          j#####i      .######:   L##########Li;,,ii;.         ;#####E          .#####W             
+         W####W        j#####D     L##################W       W#####:          i######.             
+       .#####W        i#####D        G################E     :######          :K#####f               
+       ######.       D#####;        ;###;iGW#########;     ,######              .:                  
+      E#####E      L#####f         D##D      K#####i      .######            i#####.                
+     .######f    D#####j         ;###:     G#####G        W#####f           K#####K                 
+     :######G  D####D:         ,###t      ######t        ,######.          #######                  
+      ####### tDLi           t###f       ######L        t#######.         #######,                  
+      i#######i          :f####t        i######       L#########E       j#######L                   
+       i#########EGGGE######K,          i######E;,tE####D G######W,  .L#########                    
+         L###############G:              G###########W;    i############E,######                    
+            iLEKKKDLt:                     jK####WG;         ;E######D;   W#####;                   
+                                                                           ######.                  
+                                                                            j#####j                 
+                                                                               -->
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		
+		<!-- Fixing viewport for iPads and iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Award-winning Graphic, Web and Interaction Design"/>
+		<meta name="author" content="Pascal Verstegen">
+		<title>Enkera ♥ to design and craft graphics, websites and experiences</title>
+		
+		<!-- HTML5 script for IE -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+		<!--Here I load all iOS related screen settings and app icons -->
+		<!--[if !IE]> -->
+			<script type="text/javascript">
+			// When ready...
+			window.addEventListener("load",function() {
+				// Set a timeout...
+				setTimeout(function(){
+					// Hide the address bar!
+					window.scrollTo(0, 1);
+				}, 0);
+			});
+			</script>
+			<?php if($browser == 'iphone'){ ?>
+				<meta name="viewport"
+				content="width=device-width,
+				minimum-scale=1.0, maximum-scale=1.0" />
+			<?php } ?>
+				<meta name="apple-mobile-web-app-capable" content="yes">
+				<link rel="apple-touch-startup-image" href="iOS/iPhonePortrait.png" />
+				<link rel="apple-touch-icon" sizes="114x114" href="iOS/apple-touch-icon-iphone4.png" />
+				<link rel="apple-touch-icon" sizes="72x72" href="iOS/apple-touch-icon-ipad.png" />
+				<link rel="apple-touch-icon" sizes="57x57" href="iOS/apple-touch-icon-iphone.png" />
+				<link rel="apple-touch-startup-image" sizes="1004x768" href="iOS/iPadPortait.png" />
+		<!-- <![endif]--> 
+
+		<link rel="stylesheet" type="text/css" href="backup.css" />
+				
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<!--[if IE]>
+		<style>
+		#post {
+		display:inline;
+		overflow: hidden;
+		}
+		img {
+			width: expression(this.width > 500 ? 500: true);
+		}
+		#article {
+		margin:40px 0px 0px 40px;
+		float: left;
+		height: 400px;
+		overflow: auto;
+		}
+		#subtitle {
+			font-size: 17px;
+		}
+		.image-holder img {
+			width: 240px;
+		}
+		#logo {
+			margin-top: 0px;
+		}
+		#floor {
+			padding-left: 40px;
+		}
+		#floorwrapper {
+			width: 100%;
+		}
+		#screen {
+			bottom:254px;
+			left: 95px;
+		}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<![endif]-->	
+	</head>
+
+	<body lang="en">
+
+		<!-- Top of the page -->
+		<div id="logo"><a href="index.html"><img src="images/logo.png" width="100%"/></a></div>
+		<div id="desk">
+			<div id="holder">
+			<div id="post">
+			<div id="kaart">
+					<div style="padding: 20px;font-size: 32px;width: 400px;font-family: 'light';line-height: 1.4;">
+					Hello. I'm a designer.<br>I ♥ to design and craft graphics, websites and experiences.
+					</div>
+			</div>
+			</div>
+				<div id="post">
+					<div id="kaart">
+					<div class="afbeelding">
+					<img src="images/highlife.jpg" alt="soaker" width="100%"/>
+					</div>
+					</div>
+				</div>
+				
+				<div id="post">
+				<div style="position:absolute;bottom:15px;left: -23px;">
+				<img src="images/macintosh.png" alt="macintosh"/>
+				</div>
+				<div id="screen">
+				<img src="images/screen.gif" width="100%" alt="soaker" />
+				</div>
+				</div>
+				
+				<div id="post">
+					<div id="kaart">
+						<div class="afbeelding">
+						<img src="images/soaker.jpg" alt="soaker" width="100%"/>
+						</div>
+					</div>
+				</div>
+				
+				<div id="post">
+					<div id="kaart">
+					<div class="afbeelding">
+					<img src="images/distraction.jpg" alt="soaker" width="100%" />
+					</div>
+					</div>
+				</div>
+				
+				<div id="post">
+					<div id="kaart">
+					<div class="afbeelding">
+					<img src="images/brainzone.jpg" alt="soaker" width="100%" />
+					</div>
+					</div>
+				</div>
+			</div>			
+			</div>
+			<div id="floor">
+			<!--[if !IE]><div id="floorwrap"><![endif]-->
+				<div id="nav">
+					<div id="nicelink">
+					<!--[if !IE]> --><div style="margin-left: 40px;">
+					<a class="show_hide" href="#" class="active" rel="#slidingDiv">Toggle news drawer</a><!-- <![endif]--> 
+					<a title="first" id="first" href="#">First</a>
+					<a title="back" id="back" href="#">Back</a>
+					<a title="next" id="next" href="#">Next</a>
+					</div></div>
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style " style="margin-right: 40px;">
+					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+					<a class="addthis_button_tweet"></a>
+					<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+					</div>
+					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4edf90a86ca2c70b"></script>
+					<!-- AddThis Button END -->
+				</div>
+			<!--[if !IE]></div><![endif]-->
+			</div>
+		<div id="nicelink">
+		<div id="input">
+			<div id="newsholder">
+				<div id="article">
+					<div id="title">INTERN IN NEW YORK CITY<br> 
+					</div><div id="subtitle">Livestream.com<br> </div>
+					
+					<div class="image-holder"><img src="images/artikel1.jpg"/></div>
+					<p>From September 1st until December 23rd I will be interning at Livestream.com all the way across the Atlantic in New York City, I have to say that this really feels like the best thing that will ever happen to me, it is a joy working for this company and New York is really the most inspiring place you can imagine.</p>
+					<a href="http://new.livestream.com" id="Link">Livestream.com</a><a href="livestream.html" id="Link">Read more about this</a>
+				</div>
+				<div id="article">
+					<div id="title">FEATURED IN THE UNITED STATES<br> 
+					</div><div id="subtitle">Designing a Digital Portfolio<br></div>
+					<div class="image-holder"><img src="images/artikel4.jpg"/></div>
+					<p>This second edition of the original best-seller ‘Creating a Digital Portfolio’ by Cynthia Baron contains a 6 page interview and case-study on my joint-project Noa Studios which i run with Emin Sinani, definitely a great read for anyone starting they’re first online portfolio</p>
+					<a href="http://www.amazon.com/Designing-Digital-Portfolio-Voices-Matter/dp/0321637518/" id="Link">Buy on Amazon.com</a>
+				</div>
+				<div id="article">
+					<div id="title">NOSTALGIA<br></div><div id="subtitle">Noa Studios legacy website<br> </div>
+					<div class="image-holder"><img src="images/artikel5.jpg"/></div>
+					<p>Noa Studios was my pre-graduate webdesign and interface effort created with Emin Sinani, while we were both attending university.<br><br>
+					The website has been preserved here for nostalgic reasons</p><a href="http://www.noastudios.com/timemachine.html" id="Link">Noa Studios</a>
+				</div>
+				<div id="article">
+					<div id="title">FEATURED IN JAPAN<br></div><div id="subtitle">Windows 100% Magazine<br> </div>
+					<div class="image-holder"><img src="images/artikel5.jpg"/></div>
+					<p>Noa Studios was my pre-graduate webdesign and interface effort created with Emin Sinani, while we were both attending university.<br><br>
+					The website has been preserved here for nostalgic reasons</p><a href="http://www.noastudios.com/timemachine.html" id="Link">Noa Studios</a>
+				</div>
+				<div id="article">
+					<div id="title">FEATURED IN THE NETHERLANDS<br> 
+					</div><div id="subtitle">Publish Magazine<br> </div>
+					<div class="image-holder"><img src="images/artikel2.jpg"/></div>
+					<p>Evoke artgroup which i’m part of i creatred this artwork about a Mixtape, which was the theme for the artpack. I decided to create a vector of myself showing old tape from a tapedeck spanning all around me, talking to me about ‘Mixtape Memories’</p>
+					<a href="http://www.evokeone.com/" id="Link"> Evoke</a>
+				</div>
+				<div id="article">
+					<div id="title">CLIENT WORK<br> 
+					</div><div id="subtitle">Grafisch Lyceum Rotterdam<br></div>
+					<div class="image-holder"><img src="images/artikel9.jpg"/></div>
+					<p>Recently my own school has started using some of my more colourful work in their Corporate Identitiy (Contactcards, Brochures, Flyers, Posters etc.) For the 2009-2010-2011 school semesters.<br>
+					I’m very proud of this!</p>
+					<a href="1.html" id="Link">GLR.nl</a><a href="1.html" id="Link">Details</a>
+				</div>
+			</div>
+		</div></div>
+		<div id="footer">
+				<div style="height: 70px;width: 70px;margin-right: 40px;float: left;"><a href="index.html"><img src="images/whitelogo.png" width="70px"/></a></div>
+				<div style="height: 70px;float: left;margin-top: 10px;"><div id="nicelink">
+		I ♥ to do design | <a href="mailto:enkera@enkera.com?Subject=Question%20about:%20">
+		Send Mail</a> | <a href="mailto:enkera@enkera.com?Subject=Request%20Quote">Get Quote</a> | <a href="404.html" title="Space Invaders">Space Invaders</a><br>
+		© 2005-2012 <a href="index.html" title="Home">Pascal Verstegen</a> · <a href="www.mediatemple.net">(mt) Media Temple</a> · Made in NYC</div></div></div>
+		</div>
+		
+		<div id="social">
+			<a href="http://www.twitter.com/enkera" ><img src="images/twitter.png" width="32" height="32" /></a><a href="http://www.facebook.com/Enkera" ><img src="images/facebook.png" width="32" height="32" /></a><a href="http://dribbble.com/Enkera" ><img src="images/dribbble.png" width="32" height="32" /></a><a href="http://www.linkedin.com/in/enkera" ><img src="images/linkedin.png" width="32" height="32" /></a><a href="mailto:enkera@enkera.com" ><img src="images/mail.png" width="32" height="32" /></a>
+		</div>
+	</body>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.scrollTo-min.js"></script>	
+	<script src="js/enkera.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9432622-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+	<script type="text/javascript" src="http://iconblock.com/web/wp-content/plugins/let-it-snow/script/snowstorm-min.js"></script>
+	<script type="text/javascript">
+	sitePath = "http://iconblock.com/web/wp-content/plugins/let-it-snow/";
+	snowStorm.animationInterval = 33;
+	snowStorm.flakeBottom = null;
+	snowStorm.flakesMax = 128;
+	snowStorm.flakesMaxActive = 64;
+	snowStorm.followMouse = 1;
+	snowStorm.freezeOnBlur = 1;
+	snowStorm.snowColor = "#fff";
+	snowStorm.snowCharacter = "&bull;";
+	snowStorm.snowStick = 1;
+	snowStorm.targetElement = null;
+	snowStorm.useMeltEffect = 1;
+	snowStorm.useTwinkleEffect = 1;
+	snowStorm.usePositionFixed = ;
+	snowStorm.vMaxX = 8;
+	snowStorm.vMaxY = 5;
+	</script>
+</html>
